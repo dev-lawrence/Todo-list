@@ -22,6 +22,8 @@ const addTodo = (todo) => {
       <li>${inputValue}</li>
       <i class="fa-solid fa-xmark delete"></i>
   `;
+
+    // append new Todo the todo List
     todoList.appendChild(newTodo);
 
     showAlert('Todo added', 'success');
@@ -49,7 +51,7 @@ const showAlert = (message, classname) => {
   const container = document.querySelector('.content');
   container.insertBefore(div, form);
 
-  setTimeout(() => document.querySelector('.alert').remove(), 2000);
+  setTimeout(() => document.querySelector('.alert').remove(), 1000);
 };
 
 // EVENT LISTENERS
